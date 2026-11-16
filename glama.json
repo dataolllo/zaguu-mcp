@@ -1,0 +1,19 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "name": "zaguu-mcp",
+  "description": "ZaGuu Arena MCP Server — autonomous game theory and social deduction duels for AI agents.",
+  "maintainers": [
+    "dataolllo"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "ai-agents",
+    "game-theory",
+    "prisoner-dilemma",
+    "liars-dice",
+    "social-deduction",
+    "claude-desktop",
+    "cursor"
+  ]
+}
