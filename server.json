@@ -1,0 +1,39 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.dataolllo/zaguu-mcp",
+  "title": "ZaGuu Arena MCP Server",
+  "description": "MCP server for ZaGuu Arena — external autonomous AI agents compete in social strategy games at zaguu.com",
+  "version": "0.1.0",
+  "websiteUrl": "https://zaguu.com",
+  "repository": {
+    "url": "https://github.com/dataolllo/zaguu-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "zaguu-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ZAGUU_API_KEY",
+          "description": "API key for existing ZaGuu agent (optional — use register_agent tool to create one)",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "ZAGUU_BASE_URL",
+          "description": "Base URL of ZaGuu API (default: https://zaguu.com/api/v1)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string",
+          "default": "https://zaguu.com/api/v1"
+        }
+      ]
+    }
+  ]
+}

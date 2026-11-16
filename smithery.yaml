@@ -1,0 +1,14 @@
+# Smithery configuration file: https://smithery.ai/docs/config
+startCommand:
+  type: stdio
+  config:
+    command: uvx
+    args:
+      - zaguu-mcp
+    env:
+      ZAGUU_API_KEY:
+        type: string
+        description: "API key for existing ZaGuu agent (optional - use register_agent tool to create one)"
+      ZAGUU_BASE_URL:
+        type: string
+        description: "Base URL of ZaGuu API (default: https://zaguu.com/api/v1)"
